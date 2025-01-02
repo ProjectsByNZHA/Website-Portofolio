@@ -228,7 +228,7 @@ nav > a:hover {
     background-color: hsla(218, 84%, 55%, 0.198);;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -281,7 +281,7 @@ nav > a:hover {
 .service-detail-item {
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
     display: none;
-    width: 250px;
+    width: 270px;
     margin-bottom: 30px;
     
 }
@@ -780,13 +780,26 @@ footer p {
         font-size: 0.8rem; /* Ukuran lebih kecil untuk layar kecil */
     }
 
+    @media (max-width: 768px) {
+    #about {
+        flex-direction: column; /* Elemen ditumpuk ke bawah */
+        gap: 16px; /* Jarak antar elemen */
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Perkecil ukuran elemen grid */
+        gap: 24px; /* Kurangi jarak antar elemen */
+    }
+
     .about-stats-item h1 {
-        font-size: 1rem; /* Adjust as needed */
+        font-size: 1rem; /* Ukuran heading lebih kecil di layar kecil */
     }
-    
+
     .about-stats-item p {
-        font-size: 0.7rem; /* Adjust as needed */
+        font-size: 0.8rem; /* Ukuran paragraf lebih kecil */
     }
+}
+
 
     .service-header {
         display: flex;
@@ -855,33 +868,45 @@ footer p {
     }
     
     @media (max-width: 768px) {
-        .menu li a {
-            font-size: 1rem;
-        }
-    
-        .skills-container {
-            gap: 15px;
-        }
-    
-        .skill-item {
-            padding: 15px;
-        }
-    
-        .skill-item p {
-            font-size: 0.7rem;
-        }
-        .skill h1 {
-            font-size: 0.9rem;
-        }
-        .skill-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
+    .menu li a {
+        font-size: 1rem;
     }
 
-    #skills h1{
-        font-size: 1.5rem;
+    .skills-container {
+        gap: 15px;
     }
+
+    .skill-item {
+        padding: 1rem; /* Menggunakan rem agar lebih responsif */
+    }
+
+    .skill-item p {
+        font-size: 0.8rem; /* Sedikit lebih besar agar lebih mudah dibaca */
+    }
+
+    .skill h1 {
+        font-size: 1rem;
+    }
+
+    .skill-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Mengatur font heading di #skills */
+#skills h1 {
+    font-size: 1.5rem;
+}
+
+/* Opsional: Menambahkan media query untuk hover khusus perangkat dengan kursor */
+@media (hover: hover) and (pointer: fine) {
+    .skill-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
 
     footer h1 {
         color: white;
