@@ -747,10 +747,13 @@ footer p {
 }
 
 .navbar-toggle {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-    }   
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute; /* Tambahkan properti posisi */
+    top: 16px; /* Sesuaikan jarak dari atas */
+    right: 24px; /* Letakkan di sisi kanan */
+} 
 
 @media (max-width: 768px) {
     .navbar {
