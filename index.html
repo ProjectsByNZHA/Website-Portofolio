@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <header id="header">
+        <h1>Portofolio</h1>
+        <div class="navbar-toggle" onclick="toggleNavbar()">☰</div>
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#service">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <script>
+        function toggleNavbar() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('responsive');
+        }
+    </script>
+    
+    <section id="landing">
+        <div>
+            <h2>Hi! I am</h2>
+            <h1>Nurul Azizah</h1>
+            <p>An undergraduate Informatics student at Universitas Multimedia Nusantara, specializing in Web and Software Development, as well as UI/UX Design. Experienced in building interactive applications and websites with a focus on user-friendly design. Skilled in creating intuitive interfaces, managing time, and working in teams to find creative solutions. Always eager to learn and improve in technology.</p>
+            <div>
+                <a class="btn btn-alt" href="#about">More Info</a>
+                <a class="btn" href="#contact">Contact Me</a>
+            </div>
+        </div>
+        <div>
+            <img src="images/landing5.png" alt="Landing Image">
+        </div>
+    </section>
+    <section id="about">
+        <div>
+            <img src="images/about2.png" alt="About Image">
+        </div>
+        <div>
+            <h2>Empowering Innovation and Creativity in Technology</h3>
+            <p>For the past few years, I have been passionate about creating innovative solutions, combining technical expertise and creative design to deliver impactful results in web and mobile development.</p>
+            <div class="about-stats">
+                <div class="about-stats-item">
+                    <h1>90+ Credits </h1>
+                    <div></div>
+                    <p>Completed in Informatics</p>
+                </div>
+                <div class="about-stats-item">
+                    <h1>25+ Courses </h1>
+                    <div></div>
+                    <p>Covered in Programming</p>
+                </div>
+                <div class="about-stats-item">
+                    <h1>10+ Projects </h1>
+                    <div></div>
+                    <p>Across Various Domains</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skill-item">
+                <img src="images/Anaconda.svg" alt="Anaconda">
+                <p>Anaconda</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/AndroidStudio.svg" alt="Android">
+                <p>Android Studio</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/microsoft-office-red.svg" alt="microsoft-office-red">
+                <p>Microsoft Office</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/VsCode.svg" alt="VsCode">
+                <p>VsCode</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/GitHub.svg" alt="github">
+                <p>GitHub</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/Unity.svg" alt="Unity">
+                <p>Unity</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/Canva.svg" alt="Canva">
+                <p>Canva</p>
+            </div>
+            <div class="skill-item">
+                <img src="images/Figma.svg" alt="Figma">
+                <p>Figma</p>
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <div class="service-header">
+            <div>
+                <h1>My Projects</h1>
+                <p>I worked on projects that enhanced my skills and provided practical experience,
+                     reflecting my dedication to solving real-world problems.</p>
+            </div>
+        </div>
+        <div class="service-detail">
+            <div class="service-detail-item">
+                <img src="images/findis2.jpg" alt="service 1 image">
+                <h3>FinDis: English Dictionary</h3>
+                <h4>Web Application</h4>
+                <p>Frontend Developer for FinDis, a React-based English dictionary web app. Integrated API features for word definitions, synonyms, antonyms, audio pronunciations, and bookmarking. Enhancing the user experience for quick and efficient language reference.</p>
+            </div>
+            <div class="service-detail-item">
+                <img src="images/file3.jpg" alt="service 2 image">
+                <h3>Website Profile Klik Semangat Indonesia</h3>
+                <h4>Web Design and Development</h4>
+                <p>Frontend Developer for a Laravel-based profile website for PT. Klik Semangat Indonesia’s Community Service Program (PKM). Designed to enhance online presence with company info, contact details, and a form for applicants and partners.</p>
+            </div>
+            <div class="service-detail-item">
+                <img src="images/HCI-3.jpg" alt="service 3 image">
+                <h3>MYSTICA: Mobile Fashion Shopping App</h3>
+                <h4>UI/UX Design</h4>
+                <p>As a UI/UX Designer for the MYSTICA clothing shopping app, I contributed to designing an intuitive user interface for the app's features, including size measurements, photo-based search, and virtual 3D try-on. </p>
+            </div>
+            <!-- Bagian yang tersembunyi -->
+            <div class="service-detail-item">
+                <img src="images/innotap.jpg" alt="service 4 image">
+                <h3>InnoTap Application</h3>
+                <h4>Mobile Application</h4>
+                <p>Fullstack Developer and UI/UX Designer for InnoTap, a team-built mobile project management application developed using Android Studio. The application is designed to help users efficiently track projects and tasks, focusing on individual project management.</p>
+            </div>
+            <div class="service-detail-item">
+                <img src="images/game2.jpg" alt="service 5 image">
+                <h3>Sector-X: Escape Room Game</h3>
+                <h4>Game Development</h4>
+                <p>Contributed to UI design, environment creation, and interactive object design for Sector-X, an adventure puzzle game where players explore rooms, solve challenges, and progress to the final level.</p>
+            </div>
+        </div>
+        <!-- Tombol Show More & Show Less -->
+    <button class="show-more">Show More</button>
+    <script>
+        $(document).ready(function () {
+            // Tampilkan hanya 3 elemen pertama secara default
+            $(".service-detail-item").slice(0, 3).show(); // Menampilkan 3 elemen pertama
+    
+            // State untuk mengatur mode tampil
+            let isExpanded = false;
+    
+            $(".show-more").click(function () {
+                if (isExpanded) {
+                    // Jika sedang dalam mode "Show Less", sembunyikan elemen tambahan
+                    $(".service-detail-item").slice(3).fadeOut();
+                    $(this).text("Show More");
+                } else {
+                    // Jika dalam mode "Show More", tampilkan semua elemen
+                    $(".service-detail-item").slice(3).fadeIn();
+                    $(this).text("Show Less");
+                }
+                isExpanded = !isExpanded; // Toggle state
+            });
+        });
+    </script>
+    
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, tempore!</p> -->
+        <div class="contact-detail">
+            <form action="">
+                <!-- <h1>Tell us your problem</h1> -->
+                <div class="form-group">
+                    <div id="input-name" class="input-group">
+                        <label for="">Name</label>
+                        <input type="text">
+                    </div>
+                    <div id="input-subject" class="input-group">
+                        <label for="">Subject</label>
+                        <input type="text">
+                    </div>
+                    <div id="input-email" class="input-group">
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
+                    <div id="input-phone" class="input-group">
+                        <label for="">Phone Number</label>
+                        <input type="tel">
+                    </div>
+                    <div id="input-message" class="input-group">
+                        <label for="">Message</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+            <!-- <div>
+                <h1>Our Location</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.65706910555!2d106.8524594283222!3d-6.242070227706176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fd4525190ba3%3A0x19b6e12e2482ee41!2sCoding%20Studio!5e0!3m2!1sid!2sid!4v1662888075401!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> -->
+        </div>
+    </section>
+    <footer id="footer">
+        <div>
+            <h1>Portofolio</h1>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, sint?</p> -->
+        </div>
+        <div class="social-icon">
+            <a href="https://www.instagram.com/n.zzha/profilecard/?igsh=N256M2N6OWE2bXh4" target="_blank">
+                <img src="images/Instagram.svg" alt="Instagram">
+            </a>
+            <a href="www.linkedin.com/in/nurul-azizah01" target="_blank">
+                <img src="images/LinkedIn.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/ProjectsByNZHA" target="_blank">
+                <img src="images/GitHub.svg" alt="GitHub">
+            </a>
+        </div>
+        
+    </footer>
+</body>
+</html>
