@@ -873,15 +873,19 @@ footer p {
     }
 
     .skills-container {
-        gap: 15px;
-    }
+    display: flex;
+    flex-wrap: wrap; /* Elemen akan turun ke baris berikutnya jika tidak muat */
+    gap: 8px;
+    width: 100%; /* Pastikan container mengambil lebar penuh */
+}
+
 
     .skill-item {
         padding: 1rem; /* Menggunakan rem agar lebih responsif */
     }
 
     .skill-item p {
-        font-size: 0.8rem; /* Sedikit lebih besar agar lebih mudah dibaca */
+        font-size: 0.7rem; /* Sedikit lebih besar agar lebih mudah dibaca */
     }
 
     .skill h1 {
