@@ -868,51 +868,53 @@ footer p {
         text-align: justify; /* (Opsional) Rata kiri-kanan untuk teks deskripsi */
     }
     
-    @media (max-width: 768px) {
-    .menu li a {
-        font-size: 1rem;
+   @media (max-width: 768px) {
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap; /* Agar elemen turun ke baris berikutnya jika tidak muat */
+        justify-content: center; /* Pusatkan elemen secara horizontal */
+        gap: 16px; /* Jarak antar elemen */
     }
 
-    .skills-container {
-    display: flex;
-    flex-wrap: wrap; /* Elemen akan turun ke baris berikutnya jika tidak muat */
-    gap: 8px;
-    width: 100%; /* Pastikan container mengambil lebar penuh */
-    align-items: center;
-}
-
-
     .skill-item {
-        padding: 1rem; /* Menggunakan rem agar lebih responsif */
-        align-items: center;
+        display: flex;
+        flex-direction: column; /* Atur elemen di dalam item secara vertikal */
+        align-items: center; /* Pusatkan elemen secara horizontal */
+        justify-content: center; /* Pusatkan elemen secara vertikal */
+        width: 100px; /* Pastikan semua item memiliki lebar yang sama */
+        height: 100px; /* Pastikan semua item memiliki tinggi yang sama */
+        padding: 8px; /* Tambahkan sedikit ruang di dalam */
+        background-color: hsla(218, 84%, 55%, 0.198);; /* Warna latar belakang opsional */
+        border-radius: 8px; /* Tambahkan sudut membulat */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opsional untuk memberikan efek */
+        transition: all 0.3s ease; /* Animasi untuk hover */
+    }
+
+    .skill-item:hover {
+        transform: translateY(-5px); /* Gerakkan ke atas sedikit saat hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan */
+    }
+
+    .skill-item img {
+        max-width: 60%; /* Atur ukuran gambar agar proporsional */
+        height: auto; /* Pertahankan proporsi gambar */
     }
 
     .skill-item p {
-        font-size: 0.7rem; /* Sedikit lebih besar agar lebih mudah dibaca */
-    }
-
-    .skill h1 {
-        font-size: 1rem;
-    }
-
-    .skill-item:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        margin-top: 8px; /* Jarak antara teks dan gambar */
+        font-size: 0.9rem; /* Ukuran font teks */
+        text-align: center; /* Pusatkan teks */
+        color: #333; /* Warna teks */
     }
 }
 
-/* Mengatur font heading di #skills */
+/* Atur heading */
 #skills h1 {
-    font-size: 1.5rem;
+    text-align: center; /* Pusatkan heading */
+    font-size: 1.8rem; /* Ukuran font heading */
+    margin-bottom: 20px; /* Spasi bawah */
 }
 
-/* Opsional: Menambahkan media query untuk hover khusus perangkat dengan kursor */
-@media (hover: hover) and (pointer: fine) {
-    .skill-item:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-}
 
 
     footer h1 {
