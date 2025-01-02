@@ -747,12 +747,10 @@ footer p {
 }
 
 .navbar-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 24px;
-    padding: 8px;
-    margin: 0 auto; /* Pusatkan tombol toggle */
-}
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }   
 
 @media (max-width: 768px) {
     .navbar {
