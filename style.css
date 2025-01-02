@@ -715,26 +715,57 @@ footer p {
     }
 
     .navbar {
-        display: none; /* Awalnya tersembunyi */
-    }
-    
-    .navbar.responsive {
-        display: flex;
-        flex-direction: row;
-        background-color: #fff;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 16px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Awalnya tersembunyi */
+    justify-content: center; /* Pusatkan elemen navbar */
+    align-items: center; /* Pusatkan secara vertikal */
+    background-color: #fff; /* Warna latar belakang */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 16px 24px; /* Tambahkan padding horizontal dan vertikal */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #ddd; /* Tambahkan garis batas atas */
+    box-sizing: border-box; /* Pastikan padding tidak menambah ukuran elemen */
+}
+
+.navbar.responsive {
+    display: flex;
+    flex-direction: row; /* Atur dalam baris */
+}
+
+.navbar a {
+    text-decoration: none; /* Hilangkan garis bawah */
+    margin: 0 16px; /* Jarak horizontal antar elemen */
+    font-size: 16px; /* Ukuran font */
+    color: #333; /* Warna teks */
+    transition: color 0.3s ease; /* Tambahkan efek saat hover */
+}
+
+.navbar a:hover {
+    color: #007bff; /* Warna saat hover */
+}
+
+.navbar-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 8px;
+    margin: 0 auto; /* Pusatkan tombol toggle */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Ubah menjadi kolom pada layar kecil */
+        align-items: flex-start; /* Rata kiri elemen di layar kecil */
+        padding: 16px; /* Sesuaikan padding */
     }
 
-    .navbar-toggle {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-    }   
+    .navbar a {
+        margin: 8px 0; /* Jarak vertikal antar elemen */
+    }
+}
+
     
     #landing > div {
         width: 80%;
