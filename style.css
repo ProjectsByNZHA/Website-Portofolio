@@ -275,14 +275,14 @@ nav > a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .service-detail-item {
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
     display: none;
-    width: 310px;
-    margin-bottom: 20px;
+    width: 350px;
+    margin-bottom: 30px;
     
 }
 
