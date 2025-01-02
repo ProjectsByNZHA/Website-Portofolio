@@ -237,6 +237,7 @@ nav > a:hover {
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
+    
 }
 
 .skill-item p {
@@ -877,11 +878,13 @@ footer p {
     flex-wrap: wrap; /* Elemen akan turun ke baris berikutnya jika tidak muat */
     gap: 8px;
     width: 100%; /* Pastikan container mengambil lebar penuh */
+    align-items: center;
 }
 
 
     .skill-item {
         padding: 1rem; /* Menggunakan rem agar lebih responsif */
+        align-items: center;
     }
 
     .skill-item p {
