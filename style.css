@@ -994,3 +994,20 @@ footer p {
     }
     
 }
+
+@media (max-width: 768px) {
+    #landing {
+        flex-direction: column; /* Atur elemen menjadi kolom */
+        align-items: center; /* Pusatkan elemen */
+        text-align: center; /* Agar teks berada di tengah */
+    }
+
+    #landing > div {
+        width: 100%; /* Atur lebar elemen menjadi penuh untuk layar kecil */
+        margin-bottom: 16px; /* Tambahkan jarak antar elemen */
+    }
+
+    #landing p {
+        margin-bottom: 16px; /* Kurangi margin bawah untuk layar kecil */
+    }
+}
