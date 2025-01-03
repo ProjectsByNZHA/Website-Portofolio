@@ -995,22 +995,23 @@ footer p {
     
 }
 
+/* Atur layout untuk layar kecil */
 @media (max-width: 768px) {
     #landing {
-        flex-direction: column; /* Atur elemen menjadi kolom */
+        flex-direction: column; /* Elemen menjadi kolom */
         align-items: center; /* Pusatkan elemen */
         text-align: center; /* Agar teks berada di tengah */
     }
 
     #landing > div:first-child {
-        order: -1; /* Pastikan elemen pertama (gambar) muncul di atas */
-        width: 100%; /* Atur lebar penuh untuk layar kecil */
+        order: -1; /* Gambar muncul di atas */
+        width: 100%; /* Lebar penuh */
         margin-bottom: 16px; /* Tambahkan jarak bawah */
     }
 
     #landing > div:last-child {
-        order: 0; /* Elemen teks berada setelah gambar */
-        width: 100%; /* Atur lebar penuh untuk layar kecil */
+        order: 0; /* Teks tetap di bawah gambar */
+        width: 100%; /* Lebar penuh */
     }
 
     #landing p {
