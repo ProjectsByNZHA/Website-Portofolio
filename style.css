@@ -144,19 +144,14 @@ nav > a:hover {
     color: hsl(218, 84%, 55%);
 }
 
-#landing {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 16px;
+#landing > div:first-child {
+    width: 65%;
+    float: left;
 }
 
-#landing p {
-    margin-bottom: 32px;
-}
-
-#landing > div {
-    width: 50%;
+#landing > div:last-child {
+    width: 35%;
+    float: left;
 }
 
 #about {
