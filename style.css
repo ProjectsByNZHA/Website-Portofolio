@@ -159,6 +159,17 @@ nav > a:hover {
     width: 50%;
 }
 
+#landing > div:first-child {
+    order: 2; /* Letakkan gambar di kanan */
+    width: 50%; /* Atur gambar setengah lebar */
+    text-align: center; /* Tengahkan gambar */
+}
+
+#landing > div:last-child {
+    order: 1; /* Letakkan teks di kiri */
+    width: 50%; /* Atur teks setengah lebar */
+}
+
 #about {
     display: flex;
     align-items: center;
