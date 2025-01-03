@@ -1002,12 +1002,19 @@ footer p {
         text-align: center; /* Agar teks berada di tengah */
     }
 
-    #landing > div {
-        width: 100%; /* Atur lebar elemen menjadi penuh untuk layar kecil */
-        margin-bottom: 16px; /* Tambahkan jarak antar elemen */
+    #landing > div:first-child {
+        order: -1; /* Pastikan elemen pertama (gambar) muncul di atas */
+        width: 100%; /* Atur lebar penuh untuk layar kecil */
+        margin-bottom: 16px; /* Tambahkan jarak bawah */
+    }
+
+    #landing > div:last-child {
+        order: 0; /* Elemen teks berada setelah gambar */
+        width: 100%; /* Atur lebar penuh untuk layar kecil */
     }
 
     #landing p {
         margin-bottom: 16px; /* Kurangi margin bawah untuk layar kecil */
     }
 }
+
