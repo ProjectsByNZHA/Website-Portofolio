@@ -147,7 +147,7 @@ nav > a:hover {
 #landing {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 16px;
 }
 
@@ -155,16 +155,9 @@ nav > a:hover {
     margin-bottom: 32px;
 }
 
-#landing > div:first-child {
-    width: 60%;
-    float: left;
+#landing > div {
+    width: 50%;
 }
-
-#landing > div:last-child {
-    width: 40%;
-    float: left;
-}
-
 
 #about {
     display: flex;
